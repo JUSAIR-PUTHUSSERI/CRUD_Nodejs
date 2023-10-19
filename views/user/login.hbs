@@ -1,7 +1,7 @@
 <div class="row">
     <div class="col-md-6 m-auto" >
         <div class="container mt-5 pl-5" >
-            <h2 class="text-center">Login</h2>
+            <h2 class="text-center text-secondary">Login</h2>
             <form action="/login" method="post">
             {{#if LoginErr}}
             <p class="error">{{LoginErr}}</p>
@@ -14,8 +14,9 @@
                     <label >password</label>
                     <input type="password" class="form-control" name="Password" placeholder="Password">
                 </div>
-                <a href="/signup">create new account ?</a>
-                <button type="submit" class="btn btn-primary float-right">Login</button>
+                <button type="submit" class="col-sm-2 btn btn-primary float-right  ml-2">Login</button>
+                <a href="/signup" class="col-sm-3 btn btn-info float-right">create new account ?</a>
+                <a href="/admin/admin-login" class="col-sm-2 btn btn-success float-left mr-3">Admin</a>
             </form>
         </div>
     </div>
